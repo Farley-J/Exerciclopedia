@@ -1,5 +1,5 @@
 import React from 'react'
-import { Typography, Stack, Button } from '@mui/material';
+import { Typography, Stack } from '@mui/material';
 import { useLocation } from 'react-router-dom';
 
 const ExerciseDetails = () => {

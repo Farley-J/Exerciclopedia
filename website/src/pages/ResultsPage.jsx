@@ -22,8 +22,8 @@ const ResultsPage = () => {
             >
             {results.length > 0 ? (
                 results.map((item, index) => (
-                    <Box key={index} mb={10} sx={{  flex: '1 1 200px',    // Allow the box to grow/shrink and set a minimum width
-                        maxWidth: '300px',    // Set a maximum width to control item size
+                    <Box key={index}  sx={{  flex: '1 1 200px',    // Allow the box to grow/shrink and set a minimum width
+                        maxWidth: '200px',    // Set a maximum width to control item size
                         padding: '16px',
                         textAlign: 'center', }} >
                     <MuiLink
@@ -32,7 +32,7 @@ const ResultsPage = () => {
                     state={{ item }}  // Pass the entire item object as state
                     underline="none"
                 >
-                        <img src={item.gifUrl} alt={item.name} loading="lazy" />
+                        <img src={item.gifUrl} alt={item.name} loading="lazy" width={200} />
                         <Stack direction="row" spacing={1}>
                             <Button sx={{ ml: '21px', color: '#fff', background: '#FFA9A9', fontSize: '14px', borderRadius: '20px', textTransform: 'capitalize' }}>
                                 {item.bodyPart}

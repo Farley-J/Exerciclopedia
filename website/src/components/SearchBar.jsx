@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Box, Stack, TextField, Typography } from '@mui/material';
+import { Box, Stack, TextField} from '@mui/material';
 import { exerciseOptions, fetchData } from '../utils/fetchData';
 import { useNavigate } from 'react-router-dom'; // React Router v6
 
@@ -7,11 +7,8 @@ import { useNavigate } from 'react-router-dom'; // React Router v6
 const SearchBar = () => {
     const [inputValue, setInputValue] = useState('');
     const navigate = useNavigate();
-    //const [response, setResponse] = useState(null);
 
-    const handleChange = (event) => {
-        setInputValue(event.target.value);
-    };
+
 
     const handleClick = async () => {
         try {

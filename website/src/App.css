@@ -1,0 +1,31 @@
+.title{
+    font-size: 25px;
+    font-family: "Gill Sans", sans-serif;
+}  
+.logo{
+    height: 30px;
+}
+.userText{
+    font-size: 40px;
+    font-family: "Gill Sans", sans-serif;
+}  
+
+.search-button {
+    background-color: #e63946; /* Nice red color */
+    color: white; /* White text for contrast */
+    border: none; /* Remove default border */
+    padding: 10px 20px; /* Padding for size */
+    font-size: 16px; /* Adjust font size */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor for interactivity */
+    transition: background-color 0.3s ease; /* Smooth hover transition */
+}
+
+.search-button:hover {
+    background-color: #d62828; /* Darker red on hover */
+}
+
+.search-button:focus {
+    outline: none; /* Remove default focus outline */
+    box-shadow: 0 0 0 3px rgba(230, 57, 70, 0.5); /* Add focus ring */
+}

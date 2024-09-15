@@ -22,7 +22,7 @@ const ResultsPage = () => {
             >
             {results.length > 0 ? (
                 results.map((item, index) => (
-                    <Box key={index} mb={2} sx={{  flex: '1 1 200px',    // Allow the box to grow/shrink and set a minimum width
+                    <Box key={index} mb={10} sx={{  flex: '1 1 200px',    // Allow the box to grow/shrink and set a minimum width
                         maxWidth: '300px',    // Set a maximum width to control item size
                         padding: '16px',
                         textAlign: 'center', }} >
@@ -41,7 +41,7 @@ const ResultsPage = () => {
                                 {item.target}
                             </Button>
                         </Stack>
-                        <Typography ml="21px" color="#000" fontWeight="bold" sx={{ fontSize: { lg: '24px', xs: '20px' } }} mt="11px" pb="10px" textTransform="capitalize">
+                        <Typography ml="21px" color="#000" fontWeight="bold" sx={{ fontSize: { lg: '24px', xs: '20px' } }} mt="11px" pb="10px"  textTransform="capitalize">
                         {item.name}
                         </Typography>
                     </MuiLink>
